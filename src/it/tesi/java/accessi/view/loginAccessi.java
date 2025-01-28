@@ -92,7 +92,7 @@ public class loginAccessi {
 					
 					
 					//Rubrica info=new Rubrica();
-					admin.main(null);
+					admino.main(null);
 					
 					
 				}
