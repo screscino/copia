@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="it/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="ext/mysql-connector-java-5.1.43-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/rs2xml.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
