@@ -7,10 +7,10 @@
 	</classpathentry>
 	<classpathentry including="it/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="ext/mysql-connector-java-5.1.43-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/commons-dbutils-1.7-tests.jar"/>
-	<classpathentry kind="lib" path="C:/Users/utente/Desktop/ControlloAccessi/rs2xml.jar"/>
+	<classpathentry kind="lib" path="/Users/Vincenzo/Documents/GitHub/copia/commons-dbutils-1.7-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/Vincenzo/Documents/GitHub/copia/commons-dbutils-1.7-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Vincenzo/Documents/GitHub/copia/commons-dbutils-1.7-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/Vincenzo/Documents/GitHub/copia/commons-dbutils-1.7.jar"/>
+	<classpathentry kind="lib" path="/Users/Vincenzo/Documents/GitHub/copia/rs2xml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
