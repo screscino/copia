@@ -315,8 +315,8 @@ public class Anagrafica{
 								int SelezioneIndiceRiga=listautenti.getSelectedRow();
 								model.removeRow(SelezioneIndiceRiga);
 								String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-								String username = "ammi";
-								String password = "ammi";
+								String username = "root";
+								String password = "";
 								String query= "UPDATE `utentianagrafica` SET `Nome`='"+txtNome.getText()+"',`Cognome`='"+txtCognome.getText()+"',`Codice`='"+txtCodice.getText()+"',`Ruolo`='"+txtRuolo.getText()+"',`Cellulare`='"+txtCellulare.getText()+"',`Luogodinascita`='"+txtLuogodinascita.getText()+"',`Datadinascita`='"+txtDatadinascita.getText()+"',`Genere`='"+txtGenere.getText()+"',`Codicefiscale`='"+txtCodicefiscale.getText()+"',`Indirizzo`='"+txtIndirizzo.getText()+"',`Citta`='"+txtCitta.getText()+"',`Provincia`='"+txtProvincia.getText()+"',`Cap`='"+txtCap.getText()+"',`Stato`='"+txtStato.getText()+"',`Email`='"+txtEmail.getText()+"',`Note`='"+txtNote.getText()+"',`Istruzione`='"+txtIstruzione.getText()+"' WHERE `id`= "+txtId.getText(); 
 						          System.out.println(query);
 						          frmProgettoPapaleo.setVisible(false);
@@ -383,8 +383,8 @@ public class Anagrafica{
 					int SelezioneIndiceRiga=listautenti.getSelectedRow();
 					model.removeRow(SelezioneIndiceRiga);
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "DELETE FROM `utentianagrafica` WHERE `utentianagrafica`.`id` ="+Selezione.getIdSelezione();//+SelezioneIndiceRiga+1;
 					System.out.println(sql);
 					try (Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -577,8 +577,8 @@ public class Anagrafica{
 				try {
 					String selection=(String)comboBoxSelection.getSelectedItem();
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String query="select * from utentianagrafica where "+selection+"=? ";
 					
 					Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -615,8 +615,8 @@ public class Anagrafica{
 				try 
 				{
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "TRUNCATE TABLE utentianagrafica";
 					System.out.println(sql);
 					frmProgettoPapaleo.setVisible(false);

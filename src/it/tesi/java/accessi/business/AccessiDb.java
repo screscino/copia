@@ -31,8 +31,8 @@ public class AccessiDb {
 			MysqlDataSource dataSource = new MysqlDataSource();
 			dataSource.setServerName("100.116.192.84");
 			dataSource.setPortNumber(3306);
-			dataSource.setUser("ammi");
-			dataSource.setPassword("ammi");
+			dataSource.setUser("root");
+			dataSource.setPassword("");
 			dataSource.setDatabaseName("controllo_accessi");
 			
 			con = dataSource.getConnection();
@@ -75,7 +75,7 @@ public class AccessiDb {
 		} 
 		try {
 			
-			cn = DriverManager.getConnection("jdbc:mysql://100.116.192.84:3306/test?user=ammi&password=ammi");
+			cn = DriverManager.getConnection("jdbc:mysql://100.116.192.84:3306/test?user=root&password=");
 
 			int id = a.getId();
 

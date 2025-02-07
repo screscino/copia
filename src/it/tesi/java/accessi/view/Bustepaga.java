@@ -318,8 +318,8 @@ public class Bustepaga{
 								int SelezioneIndiceRiga=listautenti.getSelectedRow();
 								model.removeRow(SelezioneIndiceRiga);
 								String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-								String username = "ammi";
-								String password = "ammi";
+								String username = "root";
+								String password = "";
 								String query= "UPDATE `utentibustepaga` SET `Nome`='"+txtNome.getText()+"',`Cognome`='"+txtCognome.getText()+"',`Codice`='"+txtCodice.getText()+"',`Retribuzione`='"+txtRetribuzione.getText()+"',`Oremensili`='"+txtOremensili.getText()+"',`Sistemaorario`='"+txtSistemaorario.getText()+"',`Sistemamensilizzato`='"+txtSistemamensilizzato.getText()+"',`Straordinari`='"+txtStraordinari.getText()+"',`Assenze`='"+txtAssenze.getText()+"',`Mensilita`='"+txtMensilita.getText()+"',`Anno`='"+txtAnno.getText()+"',`Iban`='"+txtIban.getText()+"',`Datapagamento`='"+txtDatapagamento.getText()+"',`Stato`='"+txtStato.getText()+"',`Permessi`='"+txtPermessi.getText()+"',`Note`='"+txtNote.getText()+"',`Acconto`='"+txtAcconto.getText()+"' WHERE `id`= "+txtId.getText(); 
 						          System.out.println(query);
 						          frmProgettoPapaleo.setVisible(false);
@@ -386,8 +386,8 @@ public class Bustepaga{
 					int SelezioneIndiceRiga=listautenti.getSelectedRow();
 					model.removeRow(SelezioneIndiceRiga);
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "DELETE FROM `utentibustepaga` WHERE `utentibustepaga`.`id` ="+Selezione.getIdSelezione();//+SelezioneIndiceRiga+1;
 					System.out.println(sql);
 					try (Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -574,8 +574,8 @@ public class Bustepaga{
 				try {
 					String selection=(String)comboBoxSelection.getSelectedItem();
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String query="select * from utentibustepaga where "+selection+"=? ";
 					
 					Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -612,8 +612,8 @@ public class Bustepaga{
 				try 
 				{
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "TRUNCATE TABLE utentibustepaga";
 					System.out.println(sql);
 					frmProgettoPapaleo.setVisible(false);

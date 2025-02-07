@@ -249,8 +249,8 @@ public class admin{
 								int SelezioneIndiceRiga=listautenti.getSelectedRow();
 								model.removeRow(SelezioneIndiceRiga);
 								String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-								String username = "ammi";
-								String password = "ammi";
+								String username = "root";
+								String password = "";
 								String query= "UPDATE `utenti` SET `Utente`='"+txtUtente.getText()+"',`Evento`='"+txtEvento.getText()+"',`Data`='"+txtData.getText()+"',`Orario`='"+txtOrario.getText()+"' WHERE `id`= "+txtId.getText(); 
 						          System.out.println(query);
 						          frmProgettoPapaleo.setVisible(false);
@@ -303,8 +303,8 @@ public class admin{
 					int SelezioneIndiceRiga=listautenti.getSelectedRow();
 					model.removeRow(SelezioneIndiceRiga);
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "DELETE FROM `utenti` WHERE `utenti`.`id` ="+Selezione.getIdSelezione();//+SelezioneIndiceRiga+1;
 					System.out.println(sql);
 					try (Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -479,8 +479,8 @@ public class admin{
 				try {
 					String selection=(String)comboBoxSelection.getSelectedItem();
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String query="select * from utenti where "+selection+"=? ";
 					
 					Connection conn = (Connection) DriverManager.getConnection(jdbcUrl, username, password); 
@@ -517,8 +517,8 @@ public class admin{
 				try 
 				{
 					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
-					String username = "ammi";
-					String password = "ammi";
+					String username = "root";
+					String password = "";
 					String sql = "TRUNCATE TABLE utenti";
 					System.out.println(sql);
 					frmProgettoPapaleo.setVisible(false);

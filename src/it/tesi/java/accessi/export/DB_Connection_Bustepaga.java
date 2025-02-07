@@ -41,7 +41,7 @@ public class DB_Connection_Bustepaga {
 		try {
 		
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://100.116.192.84:3306/controllo_accessi","ammi", "ammi");
+			connection = DriverManager.getConnection("jdbc:mysql://100.116.192.84:3306/controllo_accessi","root", "");
 			
 		} catch (ClassNotFoundException e) {
 		
