@@ -317,7 +317,7 @@ public class Bustepaga{
 							{
 								int SelezioneIndiceRiga=listautenti.getSelectedRow();
 								model.removeRow(SelezioneIndiceRiga);
-								String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+								String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 								String username = "ammi";
 								String password = "ammi";
 								String query= "UPDATE `utentibustepaga` SET `Nome`='"+txtNome.getText()+"',`Cognome`='"+txtCognome.getText()+"',`Codice`='"+txtCodice.getText()+"',`Retribuzione`='"+txtRetribuzione.getText()+"',`Oremensili`='"+txtOremensili.getText()+"',`Sistemaorario`='"+txtSistemaorario.getText()+"',`Sistemamensilizzato`='"+txtSistemamensilizzato.getText()+"',`Straordinari`='"+txtStraordinari.getText()+"',`Assenze`='"+txtAssenze.getText()+"',`Mensilita`='"+txtMensilita.getText()+"',`Anno`='"+txtAnno.getText()+"',`Iban`='"+txtIban.getText()+"',`Datapagamento`='"+txtDatapagamento.getText()+"',`Stato`='"+txtStato.getText()+"',`Permessi`='"+txtPermessi.getText()+"',`Note`='"+txtNote.getText()+"',`Acconto`='"+txtAcconto.getText()+"' WHERE `id`= "+txtId.getText(); 
@@ -385,7 +385,7 @@ public class Bustepaga{
 				{
 					int SelezioneIndiceRiga=listautenti.getSelectedRow();
 					model.removeRow(SelezioneIndiceRiga);
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String sql = "DELETE FROM `utentibustepaga` WHERE `utentibustepaga`.`id` ="+Selezione.getIdSelezione();//+SelezioneIndiceRiga+1;
@@ -573,7 +573,7 @@ public class Bustepaga{
 			public void keyReleased(KeyEvent e) {
 				try {
 					String selection=(String)comboBoxSelection.getSelectedItem();
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String query="select * from utentibustepaga where "+selection+"=? ";
@@ -611,7 +611,7 @@ public class Bustepaga{
 			
 				try 
 				{
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String sql = "TRUNCATE TABLE utentibustepaga";

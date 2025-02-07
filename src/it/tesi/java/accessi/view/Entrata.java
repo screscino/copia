@@ -229,7 +229,7 @@ public class Entrata{
 							{
 								int SelezioneIndiceRiga=listautenti.getSelectedRow();
 								model.removeRow(SelezioneIndiceRiga);
-								String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+								String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 								String username = "ammi";
 								String password = "ammi";
 								String query= "UPDATE `utenti` SET `Utente`='"+txtUtente.getText()+"',`Evento`='"+txtEvento.getText()+"',`Data`='"+txtData.getText()+"',`Orario`='"+txtOrario.getText()+"' WHERE `id`= "+txtId.getText(); 
@@ -278,7 +278,7 @@ public class Entrata{
 				{
 					int SelezioneIndiceRiga=listautenti.getSelectedRow();
 					model.removeRow(SelezioneIndiceRiga);
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String sql = "DELETE FROM `utenti` WHERE `utenti`.`id` ="+Selezione.getIdSelezione();//+SelezioneIndiceRiga+1;
@@ -344,7 +344,7 @@ public class Entrata{
 			public void keyReleased(KeyEvent e) {
 				try {
 					String selection=(String)comboBoxSelection.getSelectedItem();
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String query="select * from utenti where "+selection+"  =? ";
@@ -381,7 +381,7 @@ public class Entrata{
 			
 				try 
 				{
-					String jdbcUrl = "jdbc:mysql://localhost:3306/controllo_accessi";
+					String jdbcUrl = "jdbc:mysql://100.116.192.84:3306/controllo_accessi";
 					String username = "ammi";
 					String password = "ammi";
 					String sql = "TRUNCATE TABLE utenti";

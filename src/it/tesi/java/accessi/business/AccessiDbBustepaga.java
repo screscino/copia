@@ -29,7 +29,7 @@ public class AccessiDbBustepaga {
 	private Connection getConnection() throws SQLException {
 		if(con == null) {
 			MysqlDataSource dataSource = new MysqlDataSource();
-			dataSource.setServerName("localhost");
+			dataSource.setServerName("100.116.192.84");
 			dataSource.setPortNumber(3306);
 			dataSource.setUser("ammi");
 			dataSource.setPassword("ammi");
@@ -90,7 +90,7 @@ public class AccessiDbBustepaga {
 		} 
 		try {
 			
-			cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?user=ammi&password=ammi");
+			cn = DriverManager.getConnection("jdbc:mysql://100.116.192.84:3306/test?user=ammi&password=ammi");
 
 			int id = a.getId();
 
