@@ -48,7 +48,7 @@ import java.awt.SystemColor;
 
 
 
-public class admin{
+public class admin{asdfhdsfj
 
 	public JFrame frmProgettoPapaleo;
 	private JTable listautenti;
